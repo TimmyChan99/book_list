@@ -36,3 +36,29 @@ booksAuthors.innerText = 'Author';
 booksCollection.appendChild(booksCollectionRow);
 booksCollectionRow.appendChild(booksTitles);
 booksCollectionRow.appendChild(booksAuthors);
+
+
+//  Display Data
+
+const form = document.querySelector('#add_books');
+
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault()
+
+    // Add Book Info 
+
+    const addedBook = document.createElement("tr");
+    const addtitle = document.createElement("td");
+    const addauthor = document.createElement("td");
+
+    addtitle.innerText = bookTitle.value;
+    addauthor.innerText = authorName.value;
+
+    booksCollection.appendChild(addedBook);
+    addedBook.appendChild(addtitle);
+    addedBook.appendChild(addauthor);
+
+}
+
+);
