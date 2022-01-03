@@ -62,3 +62,16 @@ form.addEventListener('submit', (e) => {
 }
 
 );
+
+// Store data in locale storage
+
+
+form.addEventListener('change', () => {
+
+    const newBook = Object.create(bookInfo);
+    newBook.title = bookTitle.value;
+    newBook.author = authorName.value;
+
+
+    localStorage.setItem('book', JSON.stringify(newBook));
+});
