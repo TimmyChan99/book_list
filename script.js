@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', Book.displayBooks);
 
 const form = document.querySelector('#books-form');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', () => {
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
   const id = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
