@@ -37,8 +37,7 @@ class Book {
     const itemsList = document.createElement('li');
 
     itemsList.innerHTML = `
-        <p>${book.title}</p>
-        <p>${book.author}</p>
+        <p>${book.title} by <span>${book.author}</span></p>
         <button id=${book.id} type="submit" class="remove">Remove</button>
         `;
 
