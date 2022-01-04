@@ -49,6 +49,9 @@ button {
   border-radius: 3px;
   box-shadow: 3px 3px 1px black;
   align-self: flex-end;
+  color: black;
+  font-size: 19px;
+  font-weight: 800;
 }
 
 hr {
