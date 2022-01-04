@@ -75,3 +75,9 @@ input {
   border: 3px black solid;
   box-shadow: 3px 3px 1px black;
 }
+
+input::placeholder {
+  color: black;
+  font-size: 17px;
+  font-weight: 800;
+}
