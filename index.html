@@ -8,19 +8,33 @@
         <title>Awesome Books</title>
     </head>
     <body>
-        <section>
+        <header id="header">
+            <a href="#" class="logo">Awesome Books</a>
+            <nav id="navbar">
+                <ul class="navbar_links">
+                    <li class="links nav_element"><a class="nav_link" href="#">List</a></li>
+                    <hr class="vl nav_element">
+                    <li class="links nav_element"><a class="nav_link" href="#">Add new</a></li>
+                    <hr class="vl nav_element">
+                    <li class="links nav_element"><a class="nav_link" href="#">Contat</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="books_collection">
             <h1>Awesome Books</h1>
             <ul id="books-list"></ul>
-            <hr>
+            
         </section>
-        <form id="books-form">
-            <h1>Add a new book</h1>
-        <div class="inputs">
-                <input type="text" id="title" placeholder="Title:"><br>
-                <input type="text" id="author" placeholder="Author:"><br>
-                <button type="submit">Add book</button>
-        </div>
-        </form>
+      <section id="add_books">
+            <form id="books-form">
+                <h1>Add a new book</h1>
+            <div class="inputs">
+                    <input type="text" id="title" placeholder="Title:"><br>
+                    <input type="text" id="author" placeholder="Author:"><br>
+                    <button type="submit">Add book</button>
+            </div>
+            </form>
+      </section>
 
         <script src="script.js"></script>
     </body>

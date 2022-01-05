@@ -18,14 +18,14 @@ h1 {
   text-align: center;
 }
 
-ul {
+#books-list {
   border: 5px black solid;
   border-radius: 5px;
   width: 90vw;
   margin-bottom: 20px;
 }
 
-li {
+#books-list li {
   list-style: none;
   font-size: 20px;
   font-weight: 800;
@@ -38,7 +38,7 @@ li {
   width: 100%;
 }
 
-li:nth-child(odd) {
+#books-list li:nth-child(odd) {
   background-color: rgb(211, 210, 210);
 }
 
@@ -54,7 +54,7 @@ button {
   font-weight: 800;
 }
 
-hr {
+#books_collection hr {
   width: 100px;
   margin-top: 10px;
   border: 1px black solid;
@@ -83,4 +83,50 @@ input::placeholder {
   color: black;
   font-size: 17px;
   font-weight: 800;
+}
+
+#add_books {
+  display: flex;
+}
+
+/* header */
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px;
+  border: 3px black solid;
+  border-radius: 5px;
+  width: 90vw;
+  height: 50px;
+}
+
+.links {
+  list-style: none;
+}
+
+.navbar_links {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo,
+.nav_link {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.vl {
+  width: 0;
+  height: 20px;
+  border: 1px black solid;
+}
+
+.nav_element {
+  margin: 0 5px;
 }
