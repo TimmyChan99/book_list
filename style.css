@@ -6,6 +6,9 @@
 }
 
 /* book list section */
+.none {
+  display: none;
+}
 
 section {
   display: flex;
@@ -76,7 +79,6 @@ button {
   left: 50%;
   top: 40%;
   transform: translate(-50%, -40%);
-  display: none;
 }
 
 #books-form {
@@ -151,14 +153,13 @@ footer p,
 /* contact */
 
 #contact {
-  display: none;
   align-items: center;
   justify-content: center;
   height: 60vh;
   width: 80vw;
   position: fixed;
   left: 50%;
-  top: 30%;
+  top: 35%;
   transform: translate(-50%, -30%);
 }
 
