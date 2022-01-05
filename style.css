@@ -5,6 +5,8 @@
   font-family: 'Comic Neue', cursive;
 }
 
+/* book list section */
+
 section {
   display: flex;
   flex-direction: column;
@@ -13,9 +15,13 @@ section {
 
 h1 {
   margin: 20px 0;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 900;
   text-align: center;
+}
+
+#books_collection {
+  display: flex;
 }
 
 #books-list {
@@ -23,6 +29,8 @@ h1 {
   border-radius: 5px;
   width: 90vw;
   margin-bottom: 20px;
+  height: 65vh;
+  overflow: scroll;
 }
 
 #books-list li {
@@ -60,10 +68,22 @@ button {
   border: 1px black solid;
 }
 
+/* add books section */
+
+#add_books {
+  width: 70vw;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  display: none;
+}
+
 #books-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 .inputs {
@@ -73,8 +93,8 @@ button {
 }
 
 input {
-  width: 250px;
-  height: 35px;
+  width: 500px;
+  height: 40px;
   border: 3px black solid;
   box-shadow: 3px 3px 1px black;
 }
@@ -83,10 +103,6 @@ input::placeholder {
   color: black;
   font-size: 17px;
   font-weight: 800;
-}
-
-#add_books {
-  display: flex;
 }
 
 /* header */
@@ -113,12 +129,13 @@ input::placeholder {
   flex-direction: row;
 }
 
+footer p,
 .logo,
 .nav_link {
   text-decoration: none;
   color: black;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .vl {
@@ -129,4 +146,46 @@ input::placeholder {
 
 .nav_element {
   margin: 0 5px;
+}
+
+/* contact */
+
+#contact {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 80vw;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+}
+
+#contact p {
+  margin: 50px 0 30px 0;
+}
+
+#contact p,
+.contact_list {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  border: 5px black solid;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
+  width: 90vw;
+  bottom: 4%;
+  position: fixed;
 }
