@@ -70,6 +70,8 @@ form.addEventListener('submit', () => {
 
   Book.addBooksToList(book);
   Book.addBooks(book);
+
+  form.reset();
 });
 
 document.querySelector('#books-list').addEventListener('click', (e) => {
@@ -77,3 +79,34 @@ document.querySelector('#books-list').addEventListener('click', (e) => {
 
   Book.removeBook(e.target.id);
 });
+
+const addBookToList = document.getElementById('book-list');
+const openForm = document.getElementById('open-form');
+const openContact = document.getElementById('open-contact');
+const addNew = document.getElementById('add_books');
+const bookList = document.getElementById('books-list');
+const contact = document.getElementById('contact');
+
+function showForm() {
+  addNew.classList.remove('none');
+  bookList.classList.add('none');
+  contact.classList.add('none');
+}
+
+function showBook() {
+  bookList.classList.remove('none');
+  addNew.classList.add('none');
+  contact.classList.add('none');
+}
+
+function showContact() {
+  contact.classList.remove('none');
+  bookList.classList.add('none');
+  addNew.classList.add('none');
+}
+
+openForm.addEventListener('click', showForm);
+
+addBookToList.addEventListener('click', showBook);
+
+openContact.addEventListener('click', showContact);
