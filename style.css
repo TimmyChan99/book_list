@@ -30,7 +30,7 @@ h1 {
   width: 90vw;
   margin-bottom: 20px;
   max-height: 60vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #books-list li {
