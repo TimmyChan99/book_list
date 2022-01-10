@@ -28,14 +28,20 @@ https://TimmyChan99.github.io/book_list/
 
 ## Authors
 
-👤 **Fatima Ezzahra**
+
+👤 **Author 1**
 
 - GitHub: [@TimmyChan99](https://github.com/TimmyChan99)
 
 
-👤 **Milan Protic**
+👤 **Author 2**
 
-- GitHub: [@mprotic123](https://github.com/mprotic123)
+- GitHub: [@zieeco](https://github.com/zieeco)
+
+
+ 👤**Author 3**
+
+- GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
 
 ## 🤝 Contributing
 
